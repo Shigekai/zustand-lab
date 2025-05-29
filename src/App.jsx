@@ -9,7 +9,7 @@ function App() {
   const modoCronometro = {
     id: "foco",
     nome: "Foco",
-    frase: ["Otimize sua produtividade,", "mergulhe no que importa."],
+    frase: ["Otimize sua produtividade, ", "mergulhe no que importa."],
     tempoInicialEmSegundos: 30,
   };
 
