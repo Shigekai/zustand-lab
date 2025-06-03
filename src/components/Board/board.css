@@ -1,8 +1,15 @@
+.boardContainer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .board{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    width: calc(3 * 2.5rem);
-    height: calc(3 * 2.5rem);
+    width: calc(3 * 6.5rem);
+    height: calc(3 * 6.5rem);
     border: 1px solid #999;
 }
