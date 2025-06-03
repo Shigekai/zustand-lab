@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; 
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import styles from "./App.module.css";
 
 import Cabecalho from "./components/Cabecalho";
@@ -7,6 +7,7 @@ import ListaDeTarefas from "./components/ListaDeTarefas";
 import Rodape from "./components/Rodape";
 import { HomePage } from "./pages/HomePage";
 import { TicTacToe } from "./pages/TicTacToe";
+import { UpdatingState } from "./pages/UpdatingState";
 
 function App() {
     const modoCronometro = {
@@ -21,14 +22,15 @@ function App() {
             <div className={styles[`app--${modoCronometro.id}`]}>
                 <Cabecalho />
 
-            <main>
-                <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/tictactoe" element={<TicTacToe />} />
-                </Routes>
-            </main>
+                <main>
+                    <Routes>
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/tictactoe" element={<TicTacToe />} />
+                        <Route path="/update" element={<UpdatingState />} />
+                    </Routes>
+                </main>
 
-            <Rodape />
+                <Rodape />
             </div>
         </Router>
     );
